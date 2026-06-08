@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TCDS - Computer Software Education & IT Training Institute in Dharmapuri offering Data Analytics, AI, Python, Java, Web Development, Digital Marketing, Tally, Advanced Excel, MS Office, DCA, HDCA, HDFD & ADAD courses.">
+
+    <!-- ========== Page Title ========== -->
+    <title>Our Courses - TCDS Computer Software Education</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/validnavs.css" rel="stylesheet" />
+    <link href="assets/css/helper.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- Popup Form Custom CSS -->
+    <style>
+        /* Popup Overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 99999;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-overlay.active {
+            display: flex;
+        }
+        /* Popup Box */
+        .popup-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            animation: popupFadeIn 0.3s ease;
+        }
+        @keyframes popupFadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .popup-box h3 {
+            margin-bottom: 10px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+        .popup-box .selected-course {
+            background: #f0f4ff;
+            color: #2563eb;
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .popup-box .form-group {
+            margin-bottom: 15px;
+        }
+        .popup-box .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .popup-box .form-control:focus {
+            border-color: #2563eb;
+            outline: none;
+        }
+        .popup-box textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .popup-box .submit-btn {
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        .popup-box .submit-btn:hover {
+            background: #1d4ed8;
+        }
+        .popup-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.3s;
+        }
+        .popup-close:hover {
+            color: #e53e3e;
+        }
+        /* Success Message */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .success-message .check-icon {
+            font-size: 50px;
+            color: #10b981;
+            margin-bottom: 15px;
+        }
+        .success-message h4 {
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Start Preloader 
+    ============================================= -->
+ 
+    <!-- End Preloader -->
+
+    <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area inc-pad bg-dark text-light">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 info">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Mohammad Ali Club, Near Town Bus Stand, Dharmapuri – 636701
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope-open"></i> tcdsdpi@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-end item-flex">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fas fa-clock"></i> Office Hours: 9:00 AM – 7:00 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav navbar-sticky navbar-default validnavs">
+            <div class="container d-flex justify-content-between align-items-center">            
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo-1.jpeg" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <div class="collapse-header">
+                        <img src="assets/img/logo-1.jpeg" class="logo" alt="Logo">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <div class="attr-right">
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="contact">
+                                <div class="call">
+                                    <div class="icon">
+                                        <i class="fas fa-comments-alt-dollar"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Have any Questions?</p>
+                                        <h5><a href="tel:9047251685">9047251685</a></h5>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+            <div class="overlay-screen"></div>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow theme bg-fixed text-light" style="background-image: url(assets/img/banner/15.html);">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6">
+                    <h2>Our Courses</h2>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active">Courses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Courses 
+    ============================================= -->
+    <div class="service-area default-padding bottom-less bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>TCDS Computer Software Education</h4>
+                        <h2>Our Professional Courses</h2>
+                        <p>Choose from our wide range of IT and software courses designed to equip you with industry-relevant skills and hands-on experience. Click on any course to enquire now.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-items text-center">
+                <div class="row">
+                    <!-- Course 1: Data Analytics -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Data Analytics">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Data Analytics</a></h4>
+                                <i class="flaticon-analysis-1"></i>
+                                <p>
+                                    Master data analysis tools and techniques. Learn to collect, process, and analyze data to drive informed business decisions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 2: Artificial Intelligence -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Artificial Intelligence">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Artificial Intelligence</a></h4>
+                                <i class="flaticon-cogwheel"></i>
+                                <p>
+                                    Explore machine learning, deep learning, and neural networks. Build intelligent systems for real-world applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 3: Python Programming -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Python Programming">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Python Programming</a></h4>
+                                <i class="flaticon-sketch"></i>
+                                <p>
+                                    Learn Python from basics to advanced. Covers data structures, OOP, web frameworks, and automation scripting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 4: Java Development -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Java Development">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Java Development</a></h4>
+                                <i class="flaticon-interview"></i>
+                                <p>
+                                    Comprehensive Java training covering core Java, Spring Boot, Hibernate, and enterprise application development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 5: Web Development -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Web Development">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Web Development</a></h4>
+                                <i class="flaticon-reduction"></i>
+                                <p>
+                                    Build responsive websites using HTML, CSS, JavaScript, React, Node.js, and full-stack development technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 6: Digital Marketing -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Digital Marketing">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Digital Marketing</a></h4>
+                                <i class="flaticon-firewall"></i>
+                                <p>
+                                    Master SEO, SEM, social media marketing, email marketing, and Google Ads to grow businesses online.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 7: Tally -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Tally">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Tally</a></h4>
+                                <i class="flaticon-cogwheel"></i>
+                                <p>
+                                    Learn Tally ERP 9 & Tally Prime for accounting, inventory management, GST filing, and financial reporting.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 8: Advanced Excel -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="Advanced Excel">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">Advanced Excel</a></h4>
+                                <i class="flaticon-analysis-1"></i>
+                                <p>
+                                    Advanced Excel training covering pivot tables, VLOOKUP, macros, data visualization, and business analytics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 9: MS Office -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="MS Office">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">MS Office</a></h4>
+                                <i class="flaticon-sketch"></i>
+                                <p>
+                                    Complete MS Office suite training: Word, Excel, PowerPoint, Outlook, and Access for professional productivity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 10: DCA -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="DCA (Diploma in Computer Applications)">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">DCA</a></h4>
+                                <i class="flaticon-interview"></i>
+                                <p>
+                                    Diploma in Computer Applications covering computer fundamentals, office automation, internet, and basic programming.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 11: HDCA -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="HDCA (Honours Diploma in Computer Applications)">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">HDCA</a></h4>
+                                <i class="flaticon-reduction"></i>
+                                <p>
+                                    Honours Diploma in Computer Applications with advanced topics in programming, database management, and web technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 12: HDFD -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="HDFD (Honours Diploma in Financial Accounting)">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">HDFD</a></h4>
+                                <i class="flaticon-firewall"></i>
+                                <p>
+                                    Honours Diploma in Financial Accounting focusing on Tally, GST, income tax, and advanced financial management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 13: ADAD -->
+                    <div class="col-lg-4 col-md-6 single-item">
+                        <div class="item course-click" data-course="ADAD (Advanced Diploma in Application Development)">
+                            <div class="info">
+                                <h4><a href="javascript:void(0);">ADAD</a></h4>
+                                <i class="flaticon-cogwheel"></i>
+                                <p>
+                                    Advanced Diploma in Application Development covering full-stack development, mobile apps, and software engineering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Courses Area -->
+
+    <!-- ========== POPUP FORM ========== -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <button class="popup-close" id="popupClose">&times;</button>
+            
+            <!-- Form Content -->
+            <div id="popupFormContent">
+                <h3>Course Enquiry</h3>
+                <div class="selected-course" id="selectedCourseDisplay">Selected Course</div>
+                <form id="courseEnquiryForm">
+                    <input type="hidden" id="courseName" name="courseName" value="">
+                    <div class="form-group">
+                        <input class="form-control" id="popupName" name="name" placeholder="Full Name *" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="popupPhone" name="phone" placeholder="Phone Number *" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="popupEmail" name="email" placeholder="Email Address *" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="popupMessage" name="message" placeholder="Your Message (Optional)"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Enquiry</button>
+                </form>
+            </div>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage">
+                <div class="check-icon">&#10004;</div>
+                <h4>Enquiry Submitted Successfully!</h4>
+                <p>Thank you for your interest. Our team will contact you shortly.</p>
+                <button class="submit-btn" id="successCloseBtn" style="margin-top:15px;">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- ========== END POPUP FORM ========== -->
+
+    <!-- Start Why Choose TCDS 
+    ============================================= -->
+    
+    <!-- End Why Choose Us Area -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <div class="fixed-shape">
+            <img src="assets/img/map.svg" alt="Shape">
+        </div>
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="assets/img/logo-1.png" alt="Logo">
+                            <p>
+                                TCDS Computer Software Education provides professional IT training in Data Analytics, AI, Python, Java, Web Development, Digital Marketing, Tally, Advanced Excel, MS Office, DCA, HDCA, HDFD & ADAD.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Our Courses</h4>
+                            <ul>
+                                <li><a href="courses.html">Data Analytics</a></li>
+                                <li><a href="courses.html">AI & Python</a></li>
+                                <li><a href="courses.html">Java & Web Dev</a></li>
+                                <li><a href="courses.html">Digital Marketing</a></li>
+                                <li><a href="courses.html">Tally & Excel</a></li>
+                                <li><a href="courses.html">DCA, HDCA, HDFD, ADAD</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <strong>Address:</strong>
+                                        Mohammad Ali Club, Near Town Bus Stand, Dharmapuri – 636701
+                                    </li>
+                                    <li>
+                                        <strong>Email:</strong>
+                                        <a href="mailto:tcdsdpi@gmail.com">tcdsdpi@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <strong>Phone:</strong>
+                                        <a href="tel:9047251685">9047251685</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="download">
+                                <h5>Follow Us</h5>
+                                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright &copy; 2026 TCDS Computer Software Education. All Rights Reserved. Developed by <a href="https://chennaileads.com" target="_blank">Chennai Leads</a></p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/validnavs.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Popup Form Script -->
+    <script>
+        $(document).ready(function() {
+            // Open popup when clicking course item
+            $('.course-click').on('click', function() {
+                var courseName = $(this).data('course');
+                $('#courseName').val(courseName);
+                $('#selectedCourseDisplay').text(courseName);
+                $('#popupFormContent').show();
+                $('#successMessage').hide();
+                $('#courseEnquiryForm')[0].reset();
+                $('#popupOverlay').addClass('active');
+                $('body').css('overflow', 'hidden');
+            });
+
+            // Close popup
+            $('#popupClose, #successCloseBtn').on('click', function() {
+                $('#popupOverlay').removeClass('active');
+                $('body').css('overflow', 'auto');
+            });
+
+            // Close popup when clicking overlay
+            $('#popupOverlay').on('click', function(e) {
+                if (e.target === this) {
+                    $('#popupOverlay').removeClass('active');
+                    $('body').css('overflow', 'auto');
+                }
+            });
+
+            // Form submission
+            $('#courseEnquiryForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                var courseName = $('#courseName').val();
+                var name = $('#popupName').val();
+                var phone = $('#popupPhone').val();
+                var email = $('#popupEmail').val();
+                var message = $('#popupMessage').val();
+
+                // Basic validation
+                if (!name || !phone || !email) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+
+                // Here you would send data to your server
+                console.log('Course Enquiry:', {
+                    course: courseName,
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    message: message
+                });
+
+                // Show success message
+                $('#popupFormContent').hide();
+                $('#successMessage').show();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
